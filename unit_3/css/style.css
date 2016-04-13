@@ -1,4 +1,4 @@
-header{
+/*header{
   z-index: 1;
   position:fixed; 
   background-image: url("images/GoldSpadeLogo.svg");
@@ -7,7 +7,7 @@ header{
   height:60px; 
   background: 255,0,0;
   opacity: 3;
-}
+}*/
 
 body {
 	text-align: center;
