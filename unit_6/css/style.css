@@ -1,13 +1,7 @@
-<<<<<<< Updated upstream
-* {margin:0;padding:0; box-sizing:border-box;}
-div#wrapper {
-	background-color: #000;
-=======
-
 #wrapper {
 	background-color: #fff;
->>>>>>> Stashed changes
 	margin: 0 auto;
+	padding: 0;
 	border: 0;
 }
 
@@ -25,11 +19,8 @@ header {
 }
 
 header img {
-<<<<<<< Updated upstream
-=======
 	background-repeat: no-repeat;
 	/*background-image: cover;*/
->>>>>>> Stashed changes
 	height: 100vh;
 	width: auto;
 	float: left;
@@ -38,11 +29,8 @@ header img {
 nav {
 	background-color: #C1B49A;
 	font-family: 'Roboto', sans-serif;
-<<<<<<< Updated upstream
 	font-size: 1em;
 	float: right;
-=======
->>>>>>> Stashed changes
 }
 
 nav a {
