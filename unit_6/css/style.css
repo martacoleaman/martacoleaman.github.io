@@ -1,13 +1,20 @@
+<<<<<<< Updated upstream
 * {margin:0;padding:0; box-sizing:border-box;}
 div#wrapper {
 	background-color: #000;
+=======
+
+#wrapper {
+	background-color: #fff;
+>>>>>>> Stashed changes
 	margin: 0 auto;
+	border: 0;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	margin: 0px;
+	margin: 0;
+	border: 0;
 }
 
 header {
@@ -18,6 +25,11 @@ header {
 }
 
 header img {
+<<<<<<< Updated upstream
+=======
+	background-repeat: no-repeat;
+	/*background-image: cover;*/
+>>>>>>> Stashed changes
 	height: 100vh;
 	width: auto;
 	float: left;
@@ -26,23 +38,30 @@ header img {
 nav {
 	background-color: #C1B49A;
 	font-family: 'Roboto', sans-serif;
+<<<<<<< Updated upstream
 	font-size: 1em;
 	float: right;
+=======
+>>>>>>> Stashed changes
 }
 
 nav a {
-	color: #fff;
+	color: white;
 	background-color: #C1B49A;
-	display: inline-block;
-	float: left;
+	display: block;
+	font-size: 1em;
 	text-decoration: none;
+	text-transform: uppercase;
 	list-style-position: inside;
-	padding: 15px;
+	float: left;
+	width: auto;
+	padding: 20px;
 	margin: 5px;
 }
 
 a:hover {
-	background-color: #666;
+	background-color: #fff;
+	color:#C1B49A; 
 }
 
 .clearfix:after{
@@ -52,98 +71,156 @@ a:hover {
 	clear: both;
 	height: 0;
 	font-size: 0;
-}	
-
-section#about {
-    background-color: #666;
-    border: 0px;
-    overflow: auto;
-    width: 100%;
-    height: 100vh;
 }
 
 
-div#slogan {
-	font-family: 'Roboto Slab', serif;
-	font-size: 2em;
-    background-color: #fff;
-    color: #666;
-    width: 46%;
-    padding: 2%;
-    display: inline-block;
-    text-align: left;
-  	line-height: 1.5em;
-    float: left;
-}
+/*<----ABOUT ME SECTION---->*/
 
-section#description {
+#about {
     background-color: #666;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
-  	width: 46%;
-    padding: 2%;
-    display: block;
-    text-align: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 3em 0;
+    border: 0;
+  /*  position: relative;*/
+    /*display: inline-block;*/
+}
+
+#about h1{
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+    background-color: #fff;
+    text-transform: lowercase;
+    color: #C1B49A;
+    width: 100%;
+    height: 200px;
     float: left;
+    margin:0px;
+    padding: 2em;
+    /*display: block;*/
+    /*position: relative;*/
+    letter-spacing: 4px;
+    text-align: left;
+  	line-height: 1.5em;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+div .about{
+    clear: right;
 }
 
-section#portfolio {
-    background-color: #666;
-    border: 0px;
-    padding: 20px;
+#about img{
+	clear: right;
+	z-index: 1;
+	width: 15%;
+	position: relative;
+	top: -5em;
+	left: 65%;
+	display: block;
+	float: left;
+	transform: translateX(-50%);
 }
 
-div#work {
+#about h3 {
+	color:#C1B49A;
+	font-size:34px;
+	width: auto;
+	padding-left: 4em;
+	text-align:left;
+	letter-spacing:4px;
+	/*font-weight:bold;*/
+	text-transform:uppercase;
+	/*line-height:1.2;*/
+}
+
+#about p {
+	color: #fff;
+	font-weight: lighter;
+	letter-spacing:1px;
+	width:600px;
+	text-align:left;
+	margin: 80px auto 65px auto;
+	line-height: 1.5;
+	/*display: block;*/
+	/*overflow:hidden;*/
+}
+
+/*<---END ABOUT ME SECTION--->*/
+
+#work{
 	background-color: #fff;
 	padding: 4em;
-	text-align: center;
 	width: 100%;
 }
 
+.portfolio{
+  margin-top:70px;
+  width:100%; 
+  position: relative;
+  margin-bottom:70px;
+  overflow:hidden;
+}
+
+.portfolio li{
+  width:285px;
+  margin:0 15px 15px 0;
+  float: left;
+ /* position: relative;*/
+  /*overflow: hidden;*/
+}
+
+.portfolio img{
+  width:285px;
+  float: left;
+  /*position: relative;*/
+}
+
 footer {
-	background-color: #666;
+	height: 100%;
     border: 0px;
-    padding: 20px 0;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
-div#contact {
+#contact{
+	background-color:#C1B49A;
 	font-family: 'Roboto', sans-serif;
-	text-align: left;
-	height: 100vh;
-	padding: 2em;
+	width: 100%;
+	border: 0;
+	padding: 6em;
 }
 
-/*h1 {
-	font-family: 'Roboto Slab', serif;
-	font-size: 2em;
-}*/
+#contact p{
+	/*position:relative;*/
+	color: #000;
+	width:600px;
+	text-align:left;
+	/*overflow:hidden;*/
+	margin: 80px auto 65px auto;
+	line-height: 1.5;
+}
 
-/*h3 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-}*/
+#contact h3{
+	background-color: #C1B49A;
+	font-size:34px;
+	color:#fff;
+	text-align:center;
+	margin-top:120px;
+	letter-spacing:4px;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:1.2;
+}
 
-/*p  {
-	background-color: #666;
-	list-style-position: inside;
-	font-weight: normal;
-	text-align: left;
-	color: #fff;
-	margin: 0px;
-}*/
-
-a {
+#contact a{
 	text-decoration: none;
 	color: #111;
+	font-weight: bold;
 }
 
-
+#contact a:hover {
+	background-color: #fff;
+}
