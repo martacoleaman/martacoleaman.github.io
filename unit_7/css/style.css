@@ -1,3 +1,4 @@
+* {margin:0;padding:0;box-sizing:border-box;}
 #container {
 	background-color: #fff;
 	margin: 0 auto;
@@ -9,6 +10,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	border: 0;
+	line-height: 1.5;
 }
 
 header {
@@ -65,50 +67,25 @@ a:hover {
 
 #about {
     background-color: #666;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
-    margin: 0;
     padding: 3em 0;
-    border: 0;
-    position: static;
-    clear: right;
 }
 
-#about .content{
-  position:relative;
-  width: 100%;
-  margin: 0 auto;
-}
+#about .content{clear: both;/* padding: 3em 0; */}
 
-#quote h1{
-	font-family: 'Roboto Slab', sans-serif;
+h1{
 	font-size: 1.5em;
 	font-weight: normal;
-    background-color: #fff;
-    text-transform: lowercase;
-    color: #C1B49A;
-    width: 100vw;
-    height: 3em;
-    vertical-align: middle;
-    float: left;
-    margin: 0;
-    padding: 2em;
-    letter-spacing: 4px;
-    text-align: left;
-  	line-height: 1.5em;
+	background-color: #fff;
+	text-transform: lowercase;
+	color: #C1B49A;
+	padding: 2em 0 2em 6em;
+	letter-spacing: 4px;
 }
 
 #bio img{
-	z-index: 1;
-	width: 10%;
-	position: relative;
-	top: -2.5em;
-	left: 65%;
 	display: block;
-	float: left;
-	transform: translateX(-55%);
-	clear: both;
+	/* float: left; */
+	margin: 1em auto;
 }
 
 #bio h3{
@@ -118,17 +95,12 @@ a:hover {
 	letter-spacing:4px;
 	font-weight:bold;
 	text-transform:uppercase;
-	clear: both;
 }
 
 #bio p{
 	color: #fff;
-	font-weight: lighter;
 	letter-spacing:1px;
-	width:600px;
-	text-align:left;
-	margin: 80px auto 80px auto;
-	line-height: 1.5;
+	margin-top: 1em;
 }
 
 .clearfix:after{
@@ -144,69 +116,37 @@ a:hover {
 
 #work{
 	background-color: #fff;
-	padding: 4em;
-	width: 100%;
+	padding: 8em 4em;
 }
 
-.portfolio{
-  margin-top:70px;
-  width:100%; 
-  position: relative;
-  margin-bottom:70px;
-  overflow:hidden;
-}
+.portfolio{list-style-type: none;}
 
 .portfolio li{
-  width:285px;
-  margin:0 15px 15px 0;
+  width: 16.66%;
   float: left;
-  position: relative;
-  overflow: hidden;
+  padding: .25em;
 }
 
 .portfolio img{
-  width:285px;
-  float: left;
-  position: relative;
+  width: 100%;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   filter: grayscale(100%);
 }
 
-footer {
-	height: 100%;
-    border: 0px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: block;
-}
+footer {padding: 6em 0;background: #C1B49A;}
 
-#contact{
-	background-color:#C1B49A;
-	font-family: 'Roboto', sans-serif;
-	width: 100%;
-	margin: 0;
-	border: 0;
-	padding: 6em 0;
-}
+#contact{width: 600px;margin: auto;}
 
 #contact p{
-	color: #000;
-	width:600px;
-	margin: 80px auto;
-	padding: 0;
-	text-align:left;
-	line-height: 1.5;
+	margin: 1em 0 0;
 }
 
 #contact h3{
 	font-size:34px;
 	color:#fff;
-	text-align:left;
 	letter-spacing:4px;
 	font-weight:bold;
 	text-transform:uppercase;
-	line-height:1.2;
 }
 
 #contact a{
