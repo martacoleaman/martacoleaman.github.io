@@ -1,0 +1,248 @@
+
+* {margin:0;padding:0;box-sizing:border-box;}
+
+#wrapper {
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	border: 0;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header {
+	background-color: #C1B49A;
+	border: 0;
+	padding: 0;
+	height: 45vh;
+}
+
+header img {
+	background-repeat: no-repeat;
+	/*background-image: cover;*/
+	height: 100vh;
+	width: auto;
+	float: left;
+}
+
+nav {
+	background-color: #C1B49A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	float: right;
+}
+
+nav a {
+	color: white;
+	background-color: #C1B49A;
+	display: block;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	list-style-position: inside;
+	float: left;
+	width: auto;
+	padding: 20px;
+	margin: 5px;
+}
+
+a:hover {
+	background-color: #fff;
+	color:#C1B49A; 
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+/*<----ABOUT ME SECTION---->*/
+
+#about {
+    background-color: #666;
+    padding: 3em 0;
+}
+
+#about .content{
+	clear: both;
+}
+
+h1{
+	font-size: 1.5em;
+    background-color: #fff;
+    color: #C1B49A;
+    padding: 2em 0 2em 6em;
+    letter-spacing: 1px;
+}
+
+#bio img{
+	display: block;
+	/*float: left;*/
+	margin: 1em auto;
+	width: 15%;
+}
+
+#bio h3{
+	color:#C1B49A;
+	font-size:2.125em;
+	letter-spacing:4px;
+	font-weight:bold;
+	text-transform:uppercase;	
+	width: 600px;
+	margin: auto;
+}
+
+#bio p{
+	color: #fff;
+	letter-spacing:1px;
+	margin-top: 1em;
+	width: 600px;
+	margin: auto;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+/*<---END ABOUT ME SECTION--->*/
+
+#work{
+	background-color: #fff;
+	padding: 8em 8em;
+}
+
+.portfolio{
+	list-style: none;
+}
+
+.portfolio img{
+  width: 25%;
+  float: left;
+  padding: .15em;
+}
+
+.portfolio li{
+  width: 25%;
+  float: left;
+  padding: .15em;
+}
+
+.portfolio img{
+  width:100%;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+footer {
+    padding: 6em;
+	background-color: #C1B49A;
+}
+
+#contact{
+	width: 600px;
+	margin: auto;
+}
+
+#contact p{
+	margin: 1em 0 0;
+}
+
+#contact h3{
+	font-size:2.125em;
+	color:#fff;
+	letter-spacing:4px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+#contact a{
+	text-decoration: none;
+	color: #111;
+	font-weight: bold;
+}
+
+#contact a:hover {
+	background-color: #fff;
+	padding: .5em;
+}
+
+@media only screen and (max-width: 580px) {
+	
+	nav {
+		float: none;
+		display: block;
+	}
+
+	nav a {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	header img {
+		height: auto;
+		width: 100vw;
+		float: left;
+	}
+
+	h1{
+	font-size: 1em;
+    padding: auto;
+	}
+
+	#about {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	#bio {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	#bio img{
+		float: none;
+		display: block;
+		width: 7em;
+	}
+
+	.portfolio{
+		float: none;
+		display: block;
+		width: auto;
+	}
+
+	.portfolio li{
+		float: none;
+		margin: 0;
+	}
+
+	#contact {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	#contact h3 {
+		font-size: 2em;
+		margin: 0;
+	}
+}
