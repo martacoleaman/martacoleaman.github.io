@@ -70,7 +70,7 @@ a:hover {
 
 #about {
     background-color: #666;
-    padding: 3em 0;
+    padding: 6em 0;
 }
 
 #about .content{
@@ -78,35 +78,38 @@ a:hover {
 }
 
 h1{
-	font-size: 1.5em;
-    background-color: #fff;
-    color: #C1B49A;
-    padding: 2em 0 2em 6em;
-    letter-spacing: 1px;
+	font-size: 2em;
+	font-weight: normal;
+	background-color: #fff;
+	color: #C1B49A;
+	padding: 8em 1em 8em 2em;
+	letter-spacing: 1px;
 }
 
 #bio img{
-	display: block;
-	/*float: left;*/
-	margin: 1em auto;
-	width: 15%;
+	width: 10em;
+	z-index: 1;
+	position: relative;
+	top: -5em;
+	left: 55%;
 }
 
 #bio h3{
 	color:#C1B49A;
 	font-size:2.125em;
-	letter-spacing:4px;
-	font-weight:bold;
-	text-transform:uppercase;	
+	letter-spacing: 3px;
+	font-weight: normal;
+	text-transform: uppercase;	
 	width: 600px;
+	padding: 0;
 	margin: auto;
 }
 
 #bio p{
 	color: #fff;
-	letter-spacing:1px;
-	margin-top: 1em;
+	padding: 2em 2em 0 0;
 	width: 600px;
+	letter-spacing: .5px;
 	margin: auto;
 }
 
@@ -123,29 +126,24 @@ h1{
 
 #work{
 	background-color: #fff;
-	padding: 8em 8em;
+	padding: 15%;
 }
 
 .portfolio{
 	list-style: none;
 }
 
-.portfolio img{
-  width: 25%;
-  float: left;
-  padding: .15em;
-}
-
 .portfolio li{
-  width: 25%;
   float: left;
   padding: .15em;
 }
 
 .portfolio img{
-  width:100%;
+  width: 18em;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   filter: grayscale(100%);
+  float: left;
+  /*padding: .15em;*/
 }
 
 footer {
@@ -160,14 +158,19 @@ footer {
 
 #contact p{
 	margin: 1em 0 0;
+	padding: 2em 2em 0 0;
+	width: 600px;
+	letter-spacing: .5px;
 }
 
 #contact h3{
 	font-size:2.125em;
 	color:#fff;
-	letter-spacing:4px;
-	font-weight:bold;
+	letter-spacing: 3px;
+	font-weight: normal;
 	text-transform:uppercase;
+	width: 600px;
+	padding: 0;
 }
 
 #contact a{
@@ -179,6 +182,43 @@ footer {
 #contact a:hover {
 	background-color: #fff;
 	padding: .5em;
+}
+
+/* <--MEDIA QUERIES--> */
+
+@media only screen and (max-width: 750px) {
+
+	#bio h3{
+		font-size:1.75em;
+		width: 80%;
+	}
+
+	#bio p{
+		width: 80%;
+	}
+
+	#work {
+		padding: 5em;
+		margin: auto;
+	}
+
+	.portfolio img{
+  		width: 80vw;
+  	}
+
+	footer {
+    	padding: 8em 0 8em 2em;
+    	width: 100%;
+	}
+
+	#contact h3{
+		font-size:1.75em;
+		width: 80%;
+	}
+
+	#contact p{
+		width: 80%;
+	}
 }
 
 @media only screen and (max-width: 580px) {
@@ -200,27 +240,21 @@ footer {
 		float: left;
 	}
 
-	h1{
-	font-size: 1em;
-    padding: auto;
-	}
-
 	#about {
 		display: block;
 		width: 100%;
 		margin: 0;
 	}
 
-	#bio {
+/*	#bio {
 		display: block;
 		width: 100%;
 		margin: 0;
-	}
+	}*/
 
 	#bio img{
-		float: none;
-		display: block;
-		width: 7em;
+		top: -4.5em;
+		left: 30%;
 	}
 
 	.portfolio{
@@ -229,20 +263,14 @@ footer {
 		width: auto;
 	}
 
-	.portfolio li{
-		float: none;
-		margin: 0;
+	.portfolio img{
+  		width: 60vw;
+  		float: left;
 	}
 
 	#contact {
-		float: none;
 		display: block;
 		width: 100%;
-		margin: 0;
-	}
-
-	#contact h3 {
-		font-size: 2em;
 		margin: 0;
 	}
 }
